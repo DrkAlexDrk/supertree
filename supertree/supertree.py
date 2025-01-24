@@ -10,7 +10,7 @@ import supertree.templatehtml as templatehtml
 from supertree.node import Node
 from supertree.treedata import TreeData
 
-import importlib.metadata
+from importlib_metadata import metadata
 import ipywidgets as widgets
 
 
