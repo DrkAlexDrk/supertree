@@ -10,7 +10,7 @@ import supertree.templatehtml as templatehtml
 from supertree.node import Node
 from supertree.treedata import TreeData
 
-from importlib_metadata import metadata
+from importlib_metadata import metadata as metadata
 import ipywidgets as widgets
 
 
@@ -644,7 +644,7 @@ class SuperTree:
             else:
                 super_tree = self.model.tree_
 
-            sklearn_version = importlib.metadata.version('scikit-learn')
+            sklearn_version = metadata.version('scikit-learn')
 
             for i in range(super_tree.node_count):
                 samples = super_tree.n_node_samples[i]
